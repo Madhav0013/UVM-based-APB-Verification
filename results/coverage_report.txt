@@ -1,0 +1,27 @@
+=== APB Functional Coverage Report ===
+Simulator: Aldec Riviera-PRO 2025.04 (EDA Playground)
+
+Coverpoint: cp_rw (Read/Write)
+  write:  hit
+  read:   hit
+  Coverage: 100%
+
+Coverpoint: cp_addr (Address)
+  0x00 (CTRL):    hit
+  0x04 (STATUS):  hit
+  0x08 (DATA):    hit
+  0x0C (CONFIG):  hit
+  invalid:        hit
+  Coverage: 100%
+
+Coverpoint: cp_error (PSLVERR)
+  no_err (0): hit
+  err    (1): hit
+  Coverage: 100%
+
+Cross: cx_rw_addr (Read/Write x Address)
+  All bins hit.
+  Coverage: 100%
+
+Overall Functional Coverage: 100.0%
+(Achieved in apb_full_test with 56 transactions)
