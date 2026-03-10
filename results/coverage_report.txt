@@ -1,6 +1,13 @@
 === APB Functional Coverage Report ===
 Simulator: Aldec Riviera-PRO 2025.04 (EDA Playground)
 
+--- Per-Test Functional Coverage ---
+apb_reg_test:      87.5% (8 transactions)
+apb_invalid_test:  37.5% (8 transactions)
+apb_random_test:   87.5% (30 transactions)
+apb_full_test:    100.0% (56 transactions)
+
+--- Final Coverage Breakdown (apb_full_test) ---
 Coverpoint: cp_rw (Read/Write)
   write:  hit
   read:   hit
@@ -24,4 +31,3 @@ Cross: cx_rw_addr (Read/Write x Address)
   Coverage: 100%
 
 Overall Functional Coverage: 100.0%
-(Achieved in apb_full_test with 56 transactions)
