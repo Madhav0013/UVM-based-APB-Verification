@@ -11,14 +11,14 @@ Zero wait-state (PREADY=1). PSLVERR on invalid address access.
 ## Simulator
 Aldec Riviera-PRO 2025.04 via EDA Playground
 
-## Tests Executed
-| Test | Transactions | Result |
-|------|-------------|--------|
-| Smoke | 2 | PASS |
-| Register Access | 8 | PASS |
-| Invalid Address | 8 | PASS |
-| Random (30 txns) | 30 | PASS |
-| Full Functional | 56 | PASS |
+## Tests Executed & Coverage
+| Test | Transactions | Functional Coverage | Sim Time | Result |
+|------|-------------|---------------------|-----------|--------|
+| Smoke | 2 | ~15% (estimated) | ~200 ns | PASS |
+| Register Access | 8 | 87.5% | 535 ns | PASS |
+| Invalid Address | 8 | 37.5% | 535 ns | PASS |
+| Random (30 txns) | 30 | 87.5% | 1195 ns | PASS |
+| Full Functional | 56 | 100.0% | 2075 ns | PASS |
 
 ## Assertions
 7 SVA properties checked continuously — 0 failures across all tests.
